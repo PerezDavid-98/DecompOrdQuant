@@ -14,13 +14,21 @@ from quantificationlib.decomposition.ordinal import FrankAndHallQuantifier
 
 from evaluate import  evaluate_submission
 from data import ResultSubmission
-from LEQUA_T3_train import load_training_set, load_testing_bag
 
 from imblearn.metrics import geometric_mean_score
 from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from sklearn.metrics import make_scorer
 
+def load_training_set(dfile):
+    data = np.genfromtxt(dfile, skip_header=1, delimiter=',')
 
+    X = data[:, 1:]
+    y = data[:, 0].astype(int)
+    return X, y
+
+def load_testing_bag(dfile):
+    X = np.genfromtxt(dfile, skip_header=1, delimiter=',')
+    return X
 
 def absolute_error(prevs, prevs_hat):
     assert prevs.shape == prevs_hat.shape, 'wrong shape {prevs.shape} vs. {prevs_hat.shape}'
