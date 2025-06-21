@@ -103,7 +103,7 @@ for k in range(len(values)):
         # Se genera el plot que muestra los datos generados (Desactivado durante pruebas)
         g=sns.pairplot(vars=["X1","X2"], data=df, hue="Clase", palette=custom_palette)
         g.figure.suptitle("Dataset Artificial - " + str(n_train), y=1.08)
-        g.savefig('data\Figuras\\artificial_pairplot_' + est_name + '-sep-' + str(mu_sep) + '-values-' + str(n_train) + '.png')
+        g.savefig('data\figures\\artificial_pairplot_' + est_name + '-sep-' + str(mu_sep) + '-values-' + str(n_train) + '.png')
 
         # fitting classifiers here, all methods use exactly the same predictions
         skf_test = StratifiedKFold(n_splits=3, shuffle=True, random_state=seed)
