@@ -1,7 +1,7 @@
 # Study of Decomposition Methods for Ordinal Quantification
 
 This repository holds the code used for my Master's Dissertation (written in Spanish): [Study of Decomposition Methods for Ordinal Quantification](https://perezdavid-98.github.io/files/Master_Dissertation_Study_of_Decomposition_Methods_For_Ordinal_Quantification.pdf),
-which can be read form the PDF in this repository or from my github.io page. 
+which can be read form the PDF in this repository or from my [home page](https://perezdavid-98.github.io//). 
 
 I am currently working on translating the dissertation to English. 
 
