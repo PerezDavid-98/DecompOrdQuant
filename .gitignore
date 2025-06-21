@@ -1,0 +1,25 @@
+# Ignore Python Virtual Environment 
+.venv/
+
+# Ignore some of the data sub directories
+data/artificial/old/
+data/Figuras
+
+# Ingore the LeQua T3 task data
+data/T3/
+
+# Ignore the dataset specific data
+data/UCI
+
+# Ignore compressed files
+*.zip
+*.7z
+
+# Ignore code workspace file
+*.code-workspace
+
+# Ignore notebooks
+*.ipynb
+
+# Ignore pycache
+__pycache__/
