@@ -29,7 +29,12 @@ The two experiments proposed are described as follows:
 * Experiment 1: In the first experiment, artificially generated datasets were used. In this case, a variable training dataset ranging from 50 to 2,000 examples in size is chosen, which will be evaluated on 300 test datasets of 2,000 examples each. That is, 300 test sets of size 2,000 will be available, which will be tested on training sets of variable size. This process was repeated k times (The dissertation was written using the results of k=10). Thus, the value reflected was be the average of 300 samples multiplied by 10 repetitions, that is, the average of 3,000 results. 
 Two cases were presented: 
     * First, the classes were well-differentiated, without much overlap in borderline values.
+
+        <img src="data/figures/artificial_pairplot_LR-sep-6-values-100.png" alt="Alt Text" width="360" height="350">
     * Second, there was more overlap in borderline values, making the test more difficult.
+
+        <img src="data/figures/artificial_pairplot_LR-sep-3-values-100.png" alt="Alt Text" width="360" height="350">
+
 * Experiment 2: In the second experiment, datasets obtained from real data were used. Again, two cases were presented:
     * In the first case, the dataset obtained from the [LeQua2024](https://lequa2024.github.io/) competition was used. Specifically, the dataset corresponding to task T3 of the competition was used, which corresponded to the ordinal case. 
     * For the second case, five datasets commonly used in the literature (Employee Selection (ESL), Lecture Evaluation (LEV), Social Workers Decisions (SWD), Boston Housing and Abalone) were used to formalize a test bench to obtain results on several datasets with real data.
@@ -52,4 +57,4 @@ The rest of the scripts used were obtained from [LeQua2024_Scripts](https://gith
 The `evaluate.py` script was modified, including the EMD metric to be used in the experiment.
 
 
-Finally, the `plotter.py` Script generates the plots used in the dissertation. The only requirement is to create the `figures` directory inside the `data` folder as it was not included in the repo.
+Finally, the `plotter.py` Script generates the plots used in the dissertation and saves them in `data/figures`. 
